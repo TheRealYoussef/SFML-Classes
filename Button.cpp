@@ -4,11 +4,11 @@ Button::Button()
 {
 }
 
-void Button::init(const std::string & file, const std::string & hoverFile, sf::RenderWindow & w, const sf::Vector2f & pos)
+void Button::init(const std::string & file, const std::string & hoverFile, sf::RenderWindow & w, const sf::Vector2f & pos, bool act)
 {
 	hovered = false;
 	pressed = false;
-	active = true;
+	active = act;
 	setImage(file, texture, sprite, pos);
 	setImage(hoverFile, hoverTexture, hoverSprite, pos);
 	window = &w;

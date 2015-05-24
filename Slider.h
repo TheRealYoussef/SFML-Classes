@@ -15,7 +15,7 @@ private:
 	bool active;
 public:
 	Slider();
-	void init(const std::string & socketFilePath, const std::string & sliderFilePath, sf::RenderWindow & window, const sf::Vector2f & position = sf::Vector2f(0, 0), unsigned int amount = 0);
+	void init(const std::string & socketFilePath, const std::string & sliderFilePath, sf::RenderWindow & window, const sf::Vector2f & position = sf::Vector2f(0, 0), unsigned int amount = 0, bool active = true);
 	void setActive(bool active);
 	void setSlider(sf::Event & sfEvent);
 	unsigned int getAmount() const;

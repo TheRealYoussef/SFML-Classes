@@ -4,9 +4,9 @@ Slider::Slider()
 {
 }
 
-void Slider::init(const std::string & socketFilePath, const std::string & sliderFilePath, sf::RenderWindow & w, const sf::Vector2f & pos, unsigned int n)
+void Slider::init(const std::string & socketFilePath, const std::string & sliderFilePath, sf::RenderWindow & w, const sf::Vector2f & pos, unsigned int n, bool act)
 {
-	active = true;
+	active = act;
 	pressed = false;
 	window = &w;
 	amount = n;

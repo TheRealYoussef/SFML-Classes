@@ -14,7 +14,7 @@ private:
 	bool active;
 public:
 	Button();
-	void init(const std::string & imageFilePath, const std::string & hoverImageFilePath, sf::RenderWindow & window, const sf::Vector2f & position = sf::Vector2f(0, 0));
+	void init(const std::string & imageFilePath, const std::string & hoverImageFilePath, sf::RenderWindow & window, const sf::Vector2f & position = sf::Vector2f(0, 0), bool active = true);
 	void setActive(bool active);
 	bool isClicked(const sf::Event & sfEvent);
 	void display() const;
